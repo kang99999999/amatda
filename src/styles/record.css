@@ -1,0 +1,70 @@
+.record-card {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  padding: 18px 25px 18px 22px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+  overflow: hidden; /* 핵심 */
+  box-shadow:
+    0 14px 30px rgba(0,0,0,0.14),
+    0 4px 10px rgba(0,0,0,0.06);
+}
+
+.record-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;              /* 위 여백 */
+  bottom: 14px;           /* 아래 여백 */
+  width: 4px;             /* 굵기 */
+  border-radius: 4px;
+  background: var(--primary-dark); /* 지금 쓰는 파랑 */
+}
+
+.record-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.record-title {
+  font-weight: 700;
+  font-size: 18px;
+  /* padding-left: 10px; */
+}
+
+
+.record-desc {
+  font-size: 14px;
+  color: var(--text-sub);
+  margin-top: 10px;
+}
+
+
+.record-date {
+  margin-top: 6px;
+}
+
+.update-main {
+  min-width: 92px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50;
+  font-weight: 500;
+  box-shadow: 0 8px 20px rgba(111,174,232,0.45);
+  height:55px;
+  margin-top: 30px;
+}
+.update-main:active {
+  transform: scale(0.96);
+}
+
+.delete-x {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  font-size: 16px;
+  color: #999;
+}

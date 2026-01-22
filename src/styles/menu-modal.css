@@ -1,0 +1,196 @@
+/* ===== Dim ===== */
+.menu-dim {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 998;
+}
+
+/* ===== Modal ===== */
+.menu-modal {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  padding: 16px;
+  z-index: 999;
+
+  animation: slideUp 0.28s cubic-bezier(.25,.8,.25,1);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translate(-50%, 100%);
+  }
+  to {
+    transform: translate(-50%, 0);
+  }
+}
+
+/* ===== Header ===== */
+.menu-header {
+  height:20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 12px;
+  box-shadow:     
+  0 0px 24px rgba(0,0,0,0.12),
+  0 3px 8px rgba(0,0,0,0.06);
+}
+
+/* ===== Menu List ===== */
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #1f2937;
+
+  box-shadow:
+    0 6px 14px rgba(0,0,0,0.12);
+
+  transition: transform 0.15s ease;
+}
+
+.menu-item:active {
+  transform: scale(0.97);
+}
+
+/* ===== Colors ===== */
+.menu-item.yellow { background: #ffeaa7; }
+.menu-item.green  { background: #c8e6c9; }
+.menu-item.orange { background: #ffd8a8; }
+.menu-item.gray   { background: #e5e7eb; }
+
+.menu-icon {
+  font-size: 40px;
+  border: 1px solid #7c7c7c3d;
+  box-shadow:   0 0px 24px rgba(0, 0, 0, 0.11),
+  0 3px 8px rgba(0,0,0,0.06);;
+}
+
+/* ===== Backdrop ===== */
+.menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1000;
+}
+
+/* ===== Drawer ===== */
+.menu-drawer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 88%;
+  max-width: 360px;
+  height: 100%;
+  background: #f4f7fb;
+
+  transform: translateX(-100%);
+  animation: slideIn 0.35s cubic-bezier(.22,.61,.36,1) forwards;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+@keyframes slideIn {
+  to { transform: translateX(0); }
+}
+
+/* ===== Header ===== */
+.menu-header {
+  background: linear-gradient(180deg, #6FAEE8, #4A90E2);
+  color: white;
+  padding: 18px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-header h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu-header button {
+  font-size: 20px;
+  color: white;
+}
+
+/* ===== Menu List ===== */
+.menu-list {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+
+/* ===== Menu Item ===== */
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #1f2937;
+
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.menu-item:active {
+  transform: scale(0.97);
+}
+
+
+/* 컬러 매핑 */
+.menu-item.blue   { background: #e8f2fd; }
+.menu-item.pink   { background: #fdecee; }
+.menu-item.yellow { background: #fff3db; }
+.menu-item.green  { background: #eaf7ef; }
+
+
+
+
+
+/* ===== Text ===== */
+.menu-text strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menu-text span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* ===== Footer ===== */
+.menu-footer {
+  padding: 12px;
+  text-align: center;
+  font-size: 12px;
+  color: #9ca3af;
+}
+

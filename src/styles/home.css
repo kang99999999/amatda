@@ -1,0 +1,159 @@
+/* ===== Home Grid ===== */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.home-card {
+  position: relative; /* ← 이거 중요 */
+  background: var(--card-bg);
+  border-radius: 22px;
+  padding: 20px 12px 18px;
+  text-align: center;
+  box-shadow:
+    0 10px 24px rgba(0,0,0,0.12),
+    0 3px 8px rgba(0,0,0,0.06);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+  overflow: hidden;
+}
+
+.home-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  border-radius: 22px 22px 0 0;
+  background: var(--card-accent);
+}
+
+.home-card.blue   { --card-accent: #e8f2fd; }
+.home-card.pink   { --card-accent: #fdecee; }
+.home-card.yellow { --card-accent: #fff3db; }
+.home-card.green  { --card-accent: #eaf7ef; }
+
+.home-card:active {
+  transform: scale(0.96);
+  box-shadow:
+    0 6px 14px rgba(0,0,0,0.18);
+}
+
+.home-card-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+.home-hero-wrap {
+  margin-top: -36px;   /* ← 겹침 포인트 */
+  padding: 0 16px;
+  position: relative;
+  z-index: 20;
+}
+
+/* ===== Home Icon ===== */
+.icon-circle {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+  box-shadow:
+  inset 0 1px 2px rgba(255,255,255,0.8),
+  inset 0 -2px 4px rgba(0,0,0,0.06);
+}
+
+.home-icon {
+  width: 72px;
+  height: 72px;
+  font-size: 30px;
+}
+
+.icon-blue { background: #e8f2fd; color: #4A90E2; }
+.icon-pink { background: #fdecee; color: #eb4d4b; }
+.icon-yellow { background: #fff3db; color: #f6b93b; }
+.icon-green { background: #eaf7ef; color: #2ecc71; }
+
+.home-title {
+  padding:8px 0;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color:#333;
+}
+
+.home-status {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-sub);
+  line-height: 1.4;
+  white-space: pre-line;
+  
+}
+
+/* ===== Hero ===== */
+.hero {
+  background: linear-gradient(135deg, #f6c177, #f2a7a0);
+  padding: 28px 22px;
+  border-radius: 26px;
+  color: #fff;
+  margin-bottom: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+
+}
+
+.hero-title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.hero-sub {
+  font-size: 14px;
+  opacity: 0.95;
+}
+/* ===== Hero Cover ===== */
+.hero-cover {
+  margin-top: -147px;   /* ← 겹침 포인트 */
+  padding: 0 16px;
+  position: relative;
+  z-index: 50;
+
+}
+
+.hero-card {
+  background: #fff;
+  border-radius: 24px 24px 0 0;
+  padding: 20px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.hero-text h2 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.hero-text p {
+  font-size: 14px;
+  color: var(--text-sub);
+}
+
+.hero-icon {
+  font-size: 42px;
+  color: var(--primary-dark);
+}
