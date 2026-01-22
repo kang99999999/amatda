@@ -20,7 +20,7 @@ export default function LastCheckPage(props: Props) {
 
   const handleAdd = () => {
     if (!name.trim() || isFull) return;
-    addItem(name.trim());
+    addItem(name.trim(), "");
     setName("");
   };
 
