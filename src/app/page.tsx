@@ -27,7 +27,7 @@ export default function HomePage() {
     );
 
     if (leaveHomeItems.length === 0) {
-      setLeaveHomeMessage("항목을 추가해보세요!");
+      setLeaveHomeMessage("항목을 추가해 보세요!");
     } else if (leaveHomeItems.every((item) => !item.isOn)) {
       setLeaveHomeMessage(
         <>
@@ -48,7 +48,7 @@ export default function HomePage() {
 
     const getLastMessage = (key: string) => {
       const items = loadFromStorage<LastCheckItem[]>(key, []);
-      if (items.length === 0) return "아직 기록이 없어요";
+      if (items.length === 0) return "항목을 추가해 보세요!";
 
       const latest = items.reduce((a, b) =>
         a.lastCheckedAt > b.lastCheckedAt ? a : b
