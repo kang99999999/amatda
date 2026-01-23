@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AMATDA</string>
+    <string name="title_activity_main">AMATDA</string>
+    <string name="package_name">com.amatda.app</string>
+    <string name="custom_url_scheme">com.amatda.app</string>
+</resources>
