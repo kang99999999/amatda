@@ -75,8 +75,8 @@ a {
   top: 0;
   z-index: 50;
   background: linear-gradient(180deg, var(--primary), var(--primary-dark));
-  padding: 40px 16px 56px;
-  height:145px;
+  padding: 35px 16px 56px;
+  height:140px;
   box-shadow:     
   0 0px 24px rgba(0,0,0,0.12),
   0 3px 8px rgba(0,0,0,0.06);
