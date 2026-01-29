@@ -120,10 +120,11 @@
 .menu-header {
   background: linear-gradient(180deg, #6FAEE8, #4A90E2);
   color: white;
-  padding: 18px 16px;
+  padding: 38px 16px 18px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .menu-header h2 {
